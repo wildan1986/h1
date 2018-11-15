@@ -1,6 +1,6 @@
 {
   "name": "projecttttttt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Project lvl1: Brain Games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
