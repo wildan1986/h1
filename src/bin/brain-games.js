@@ -2,6 +2,7 @@
 
 import functions from '..';
 
-const { greeting } = functions;
+const { greeting, getName } = functions;
 
 greeting();
+getName();

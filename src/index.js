@@ -43,5 +43,6 @@ const game = () => {
 
 export default {
   greeting,
+  getName,
   game,
 };

@@ -1,6 +1,6 @@
 {
   "name": "projecttttttt",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Project lvl1: Brain Games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -39,10 +39,7 @@
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-babel": "^5.2.1",
-    "eslint-plugin-flowtype": "^3.2.0",
-    "eslint-plugin-jest": "^22.0.0",
-    "eslint-plugin-lodash-fp": "^2.2.0-a1"
+    "eslint-plugin-babel": "^5.2.1"
   },
   "dependencies": {
     "readline-sync": "^1.4.9"
