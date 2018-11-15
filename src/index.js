@@ -14,23 +14,27 @@ const instruction = () => {
   console.log('Answer "yes" if number even otherwise answer "no".');
 };
 
+const numberOfSteps = 3;
+
+const isEven = number => (number % 2 === 0);
+
 const game = () => {
   greeting();
   instruction();
   const userName = getName();
   const iter = (step) => {
-    if (step === 4) {
+    if (step === (numberOfSteps + 1)) {
       return true;
     }
-    const num = Math.floor(Math.random() * 101);
-    const correctAns = (num % 2 === 0) ? 'yes' : 'no';
-    console.log(`Question: ${num}`);
-    const userAns = readlineSync.question('Your answer: ');
-    if (userAns === correctAns) {
+    const question = Math.floor(Math.random() * 101);
+    const correctAnswer = isEven(question) ? 'yes' : 'no';
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
-      return iter(step + 1, num);
+      return iter(step + 1, question);
     }
-    console.log(`'${userAns}' is wrong answer ;(. Correct answer was '${correctAns}'.`);
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     return false;
   };
   const res = iter(1);
