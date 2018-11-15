@@ -2,6 +2,6 @@
 
 import functions from '..';
 
-const { greeting } = functions;
+const { game } = functions;
 
-greeting();
+game();
