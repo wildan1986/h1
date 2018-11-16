@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-import functions from '..';
+import functionGame from '../index';
+import functions from '../even';
 
-const { game } = functions;
+const { game } = functionGame;
+const { instruction, even } = functions;
 
-game();
+game(instruction, even);
