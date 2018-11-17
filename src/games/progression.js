@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import game from '../index';
 import generateNum from '../utils';
 
-const instruction = 'Find the greatest common divisor of given numbers.';
+const instruction = 'What number is missing in the progression?';
 
 const maxFistNumber = 5;
 const minFistNumber = 0;
