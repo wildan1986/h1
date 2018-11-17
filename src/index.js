@@ -15,7 +15,7 @@ const numberOfSteps = 3;
 
 const game = (instruction, gameType) => {
   greeting();
-  console.log(`Question: ${instruction}`);
+  console.log(instruction);
   const userName = getName();
   const iter = (step) => {
     if (step > numberOfSteps) {
@@ -25,7 +25,7 @@ const game = (instruction, gameType) => {
     const pair = gameType();
     const question = car(pair);
     const correctAnswer = cdr(pair);
-    console.log(question);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
