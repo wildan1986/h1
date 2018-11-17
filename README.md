@@ -6,3 +6,4 @@
 Asciinema even: https://asciinema.org/a/UoH8ptadFZLfixb2n7wZByrdW
 Asciinema calc: https://asciinema.org/a/ek0uoi7Ur7rLA99lZPEVKuzHT
 Asciinema gcd: https://asciinema.org/a/7Jw4UjDN9i8MMieEE4jHjHTsH
+Asciinema progression: https://asciinema.org/a/SARqhyaUUHfMySrWhPbGL3RT5
