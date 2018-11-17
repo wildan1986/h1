@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import game from '../index';
+import game from '..';
 import generateNum from '../utils';
 
 const instruction = 'What number is missing in the progression?';

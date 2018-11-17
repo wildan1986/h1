@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import game from '../index';
+import game from '..';
 import generateNum from '../utils';
 
 const instruction = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -12,7 +12,7 @@ const isPrime = (number) => {
     return false;
   }
   const iter = (divisor, num) => {
-    if (divisor >= Math.sqrt(num)) {
+    if (divisor > Math.sqrt(num)) {
       return true;
     }
     if (num % divisor === 0) {
