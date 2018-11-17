@@ -5,9 +5,12 @@ import generateNum from '../utils';
 const instruction = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const maxNumber = 20;
-const minNumber = 2;
+const minNumber = 1;
 
 const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
   const iter = (divisor, num) => {
     if (divisor >= Math.sqrt(num)) {
       return true;
