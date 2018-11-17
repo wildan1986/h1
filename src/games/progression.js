@@ -16,9 +16,9 @@ const progression = () => {
   const missElementPosition = generateNum(0, amountOfElements - 1);
   const elements = [];
   for (let i = 0; i < amountOfElements; i += 1) {
-    elements.push(` ${firstElement + i * step}`);
+    elements.push(firstElement + i * step);
   }
-  const correctAnswer = String(firstElement + missElementPosition * step);
+  const correctAnswer = String(elements[missElementPosition]);
   elements[missElementPosition] = '..';
   const question = elements.join(' ');
   return cons(question, correctAnswer);
