@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-import functions from '..';
+import readlineSync from 'readline-sync';
 
-const { greeting, getName } = functions;
-
-greeting();
-getName();
+console.log('Welcome to the Brain Games!');
+const userName = readlineSync.question('\nMay I have your name? ');
+console.log(`Hello, ${userName}!\n`);

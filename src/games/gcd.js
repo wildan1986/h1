@@ -1,6 +1,7 @@
-const instruction = () => {
-  console.log('Find the greatest common divisor of given numbers.');
-};
+import game from '..';
+import { cons } from 'hexlet-pairs';
+
+const instruction = 'Find the greatest common divisor of given numbers.';
 
 const maxNumber = 30;
 
@@ -20,11 +21,9 @@ const gcdSearch = (a, b) => {
 const gcd = () => {
   const numberFirst = Math.floor(Math.random() * (maxNumber + 1));
   const numberSecond = Math.floor(Math.random() * (maxNumber + 1));
-  console.log(`Question: ${numberFirst} ${numberSecond}`);
-  return String(gcdSearch(numberFirst, numberSecond));
+  const questionString = `Question: ${numberFirst} ${numberSecond}`;
+  const correctAnswer = String(gcdSearch(numberFirst, numberSecond));
+  return cons(questionString, correctAnswer);
 };
 
-export default {
-  instruction,
-  gcd,
-};
+export default () => game(instruction, gcd);
